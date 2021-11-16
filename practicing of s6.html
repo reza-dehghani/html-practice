@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtmll/DTD/xhtmll-transitional.dtd">
+<html xmlns="http://w3.org/1999/xhtml">
+
+<head>
+<meta charset="UTF-8" content="text/html;" http-equiv="Content-Type" />
+<title>Create form</title>
+</head>
+
+<body>
+<p><h1>Example 1</h1></p>
+<form name="order" action="../cgi-bin/processfrm.cgi" method="get">
+	<input type="text" />
+	<input type="checkbox" />
+	<input type="radio" />
+	<select> </select>
+	<select multiple="multiple"> </select>
+	<textarea> Content </textarea>
+	<input type="password" />
+	<input type="hidden" />
+	<input type="reset"/>
+	<input type="submit" value="send"/>
+	Form controls go here.
+</form>
+
+<p><h1>Example 2</h1></p>
+<form name="order" action="http://www.11-16.ir/cgi-bin/process.cgi" method="get">
+	<label for="custname">your name: </label>
+	<input type="text" name="customer_name" id="custname"/><br/>
+	<input type="submit" value="Submit" />
+</form>
+
+<p><h1>Example 3</h1></p>
+<form name="order" action="process.cgi" method="get">
+<label>First name: <input type="text" name="first_name" value="Write your first name" maxlength="10"/></label><br/>
+<label>Last name: <input type="text" name="last_name" value="Write your last name" maxlength="10"/></label><br/>
+<input type="submit" value="Submit"/>
+</form> 
+
+<p><h1>Example 4</h1></p>
+<form name="order" action="process.cgi" method="get">
+<label>Name: <input type="text" name="cust_name"/></label><br />
+<label>Email: <input type="text" name="email"/></label><br/>
+<label>Add me to your mailing list: <input type="checkbox" checked="checked" value="SubscribeToList"/></label><br/>
+<input type="submit" value="Submit"/>
+</form>
+
+</body>
+</html>
